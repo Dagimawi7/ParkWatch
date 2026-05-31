@@ -14,7 +14,7 @@ export interface EngineResult {
     success: boolean; // was the check successful
     tickets: Ticket[]; // list of tickets found
     error?: string; // error message if any
-    screenshotpath?: string; // path to screenshot if any
+   screenshotpath?: string | undefined;// path to screenshot if any
 }
 // rules for how every city must look for parking tickets
 export interface CityEngine {
