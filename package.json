@@ -1,0 +1,29 @@
+{
+  "name": "parkwatch",
+  "version": "1.0.0",
+  "description": "Park Watch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dagimawi7/ParkWatch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dagimawi7/ParkWatch/issues"
+  },
+  "homepage": "https://github.com/Dagimawi7/ParkWatch#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}
