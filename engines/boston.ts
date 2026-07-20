@@ -1,5 +1,5 @@
 import { chromium } from 'playwright';
-import { CityEngine, EngineResult, Ticket } from './index';
+import type { CityEngine, EngineResult, Ticket } from './index.js';
 
 // Creating Boston ticket checking engine 
 export class BostonEngine implements CityEngine {
@@ -29,10 +29,10 @@ export class BostonEngine implements CityEngine {
             // Step B: Fills the license plate input
             await page.fill('input#licensePlateInput', plate);
 
-            // Step C: Selects the state dropdown (defaulting to Massachusetts 'MA')
+            // Step C: Select the state dropdown (defaulting to Massachusetts '101')
             const stateSelect = page.locator('select#licensePlateStateSelect');
             if (await stateSelect.isVisible()) {
-                await stateSelect.selectOption('MA');
+                await stateSelect.selectOption('101');
             }
 
             // Step D: Submits the search

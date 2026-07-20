@@ -1,4 +1,4 @@
-import { BostonEngine } from './engines/boston';
+import { BostonEngine } from './engines/boston.js';
 
 async function runTest() {
     const engine = new BostonEngine();
